@@ -126,6 +126,24 @@ div.absolute {
   right: 30%;
   top: 65px;
 }
+.relativeIK {
+  position: relative;
+  background-image: url("../../assets/images/Otty/Images in winterlake kuttikkanam brochure (8).jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 783px;
+}
+
+.absoluteIK {
+  position: absolute;
+  color: #7489a5;
+  background-color: transparent;
+  width: 50%;
+  text-align: center;
+  right: 30%;
+  top: 65px;
+}
 
 .sample {
   padding-top: 25px;
@@ -186,6 +204,16 @@ div.absolute {
   display: inline-block;
   cursor: pointer;
 }
+.thumbnailImageK {
+  width: 100px;
+  height: 100px;
+  background-position: center center;
+  background-size: cover;
+  border: 4px solid #7489a5;
+  margin-right: 4px;
+  display: inline-block;
+  cursor: pointer;
+}
 .fullImg {
   width: 100%;
   text-align: center;
@@ -204,6 +232,12 @@ div.absolute {
   font-family: "Roboto-Medium";
 }
 #textSampleOtty{
+  padding-left: 15px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  font-family: "Roboto-Medium";
+}
+#textSampleKuttikanam{
   padding-left: 15px;
   margin-bottom: 0px;
   padding-top: 10px;
@@ -263,6 +297,7 @@ div.absolute {
   padding-top: 0px;
   padding-bottom: 0px;
   outline: 0;
+  background-color: transparent;
 }
 .workersname {
   text-align: center;
@@ -287,6 +322,12 @@ div.absolute {
   margin-left: 10px;
 }
 .thumbnailImageO.active {
+  width: 132px;
+  height: 132px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.thumbnailImageK.active {
   width: 132px;
   height: 132px;
   margin-right: 10px;
@@ -407,6 +448,10 @@ div.absolute {
     width: 120px;
     height: 107px;
   }
+   .thumbnailImageK {
+    width: 120px;
+    height: 107px;
+  }
   div.absolute {
     width: 100%;
   }
@@ -414,6 +459,9 @@ div.absolute {
     padding-top: 18px;
   }
    #textSampleOtty {
+    padding-top: 18px;
+  }
+   #textSampleKuttikanam {
     padding-top: 18px;
   }
   .sampletext {
@@ -476,7 +524,7 @@ div.absolute {
   }
 
   .height-100vh-mob {
-    height: 95vh;
+    /*height: 95vh;*/
     display: flex;
     flex-direction: column;
     margin-top: 5vh;
@@ -536,11 +584,21 @@ div.absolute {
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
+    #view-2 #pText2dKuttikanam {
+    font-size: 16px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
 
   #view-2 #textSampleOtty, #view-2 #pText2dOtty  {
     padding-top: 0px;
     padding-left: 0px;
   }
+  #view-2 #textSampleKuttikanam, #view-2 #pText2dKuttikanam {
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+
 
   #architecture {
     padding-top: 5vh;
