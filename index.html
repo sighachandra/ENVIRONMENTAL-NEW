@@ -18,18 +18,56 @@
             <div class="" >
                 <ul class="nav nav-pills nav-justified nav nav-pills" id="main-menu-tab" role="tablist">
                     <li class="nav-item">
-                        <button class="nav-link  nav-bar1 nav-link active nav-bar button-mob1" id="pills-home-tab" data-bs-toggle="tab" data-bs-target="#company-overview" role="tab" aria-controls="pills-home" aria-selected="true">Company overview</a>
+                        <button class="nav-link  nav-bar1 nav-link active nav-bar button-mob1" id="pills-home-tab" data-bs-toggle="tab" data-bs-target="#company-overview" role="tab" aria-controls="pills-home" aria-selected="true" onclick="displayHideIcon()">Company overview</a>
                     </li>
                     <li class="nav-item">
                         <button class="nav-link nav-bar2 nav-bar button-mob2" id="pills-profile-tab" data-bs-toggle="tab" data-bs-target="#property-development" role="tab" aria-controls="pills-profile" aria-selected="false" style="border: 2px solid #e1e2db;border-bottom:0px;border-top:0px;" onclick="displayBackNormal()">Property Development</a>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link nav-bar3 nav-bar button-mob3" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#architecture" role="tab" aria-controls="pills-contact" aria-selected="false">Architecture</a>
+                        <button class="nav-link nav-bar3 nav-bar button-mob3" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#architecture" role="tab" aria-controls="pills-contact" aria-selected="false" onclick="displayHideIcon()">Architecture</a>
                     </li>
                 </ul>
             </div>
         </div>
                       <!-- End of the section -->
+    </div> 
+
+
+    <div class="container-fluid mt-5">
+       
+           
+                <div class="side_icon hidden" id="sideIconDisplay">
+                    <div class="wl-items w-100">
+                        <div class="w-100">
+                            <button class="kodaibutton w-100" id="ootyButtonSide"><img class="w-100" src="assets/images/winter-lake-ooty.png" /></button>
+                        </div>
+                        
+                    </div>
+                    <div class="wl-items w-100">
+                        <div class="w-100">
+                             <button class="kodaibutton w-100" id="kuttikanamButtonSide"><img class="w-100" src="assets/images/winterlake-kuttikkanam.jpeg" /> </a></b>
+                        </div>
+                       
+                    </div>
+                    <div class="wl-items w-100">
+                        <div class="w-100" >
+                            <button class="kodaibutton w-100" id="kodaiButtonSide"> <img class="w-100" src="assets/images/winter-lake-kodaikanal.png" /> </button>
+                        </div>
+                        
+                    </div>
+                    <div class="wl-items w-100">
+                        <div class="w-100">
+                            <a class="w-100" target="_blank" href="https://www.anugrahasrishti.com/"><img class="w-100" src="assets/images/anugraha-srishti.png" /></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            
+        
+    </div> 
+
+
+       <div class="container">               
 
         <div class="tab-content mt-4" id="pills-tabContent">
                                  
@@ -59,6 +97,7 @@
             </div>
                          
                          <!-- end of the section -->
+                         
 
                          <!-- Property Development section -->
 
@@ -70,7 +109,7 @@
                 <div class="inner-div">
                     <div class="wl-items">
                         <div class="lftdiv">
-                            <button class="kodaibutton" id="ootyButton"><img src="assets/images/winter-lake-ooty.png" /> </a></button>
+                            <button class="kodaibutton" id="ootyButton"><img src="assets/images/winter-lake-ooty.png" /></button>
                         </div>
                         <div class="rgtdiv">
                             <a target="_blank" href="https://www.winterlake.in/"> <img src="assets/images/sold-out.png" /></a>
@@ -78,15 +117,15 @@
                     </div>
                     <div class="wl-items">
                         <div class="lftdiv">
-                             <button class="kodaibutton" id="kuttikanamButton"><img src="assets/images/winterlake-kuttikkanam.jpeg" /> </a>
+                             <button class="kodaibutton" id="kuttikanamButton"><img src="assets/images/winterlake-kuttikkanam.jpeg" /> </a></b>
                         </div>
                         <div class="rgtdiv">
                             <a href="javascript:void(0);"> <img src="assets/images/new-launch.png" class="new-launch" /></a>
                         </div>
                     </div>
                     <div class="wl-items">
-                        <div class="lftdiv">
-                            <button class="kodaibutton" id="kodaiButton" onclick="displayContent()"> <img src="assets/images/winter-lake-kodaikanal.png" /> </button>
+                        <div class="lftdiv" >
+                            <button class="kodaibutton" id="kodaiButton"> <img src="assets/images/winter-lake-kodaikanal.png" /> </button>
                         </div>
                         <div class="rgtdiv">
                             <a href="javascript:void(0);"> <img src="assets/images/new-launch.png" class="new-launch" /></a>
@@ -109,7 +148,7 @@
             <div id="dispalyonclick" class="hidden">
 
                            <!-- Begining of the kodaikanal section -->
-               <div id="kodail">
+               <div id="kodaikanal">
                 <div id="view-1" class="height-100vh-mob" >
                     <div class="d-flex justify-content-center label1 py-2 ">
                         <img src="assets/images/winter-lake-kodaikanal-12-.png" class="pic1style" alt="">
@@ -194,7 +233,7 @@
 
                              <!-- Begining of the ooty section -->
 
-             
+                <div id="ootySection">
                   <div id="view-1" class="height-100vh-mob" >
                     <div class="d-flex justify-content-center label1 py-2 ">
                         <img src="assets/images/winter-lake-kodaikanal-12-.png" class="pic1style" alt="">
@@ -247,21 +286,21 @@
                             </div>
                         </div>
                     </div>
-
+                </div>
 
         
 
                               <!-- end of the ooty section -->
 
                             <!-- Begining of the kuttikanam section -->
-             <div id="kodaikanam">
+             <div id="Kuttikkanam">
              
                   <div id="view-1" class="height-100vh-mob" >
                     <div class="d-flex justify-content-center label1 py-2 ">
                         <img src="assets/images/winter-lake-kodaikanal-12-.png" class="pic1style" alt="">
                     </div>
                     <div class="relative img-bg" id="relative-in">
-                        <img class="w-100p" src="assets/images/Otty/26.jpg" />
+                        <img class="w-100p" src="assets/images/Otty/WK1.jpg" />
                         <div class="absolute py-2 px-4">
                             <p class="pText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                         </div>
@@ -543,6 +582,8 @@
     function displayContent(){
         document.getElementById("dispalyonclick").classList.remove("hidden");
         document.getElementById("displayHidden").classList.add("hidden");
+        document.getElementById("sideIconDisplay").classList.remove("hidden");
+        
 
         // if(isDesktop) {
         //     var topHeight = document.getElementById("relative-in").offsetTop;
@@ -583,7 +624,8 @@
         switchToSlide(0);
         switchToSlideOtty(0);
         switchToSlideKuttikanam(0);
-         // location.href = "#kodaikanam";
+
+        
     }
 
     function switchToSlide(targetIndex) {
@@ -608,6 +650,7 @@
         // document.getElementById("displayHidden").style.display= "block";
         document.getElementById("dispalyonclick").classList.add('hidden');
         document.getElementById("displayHidden").classList.remove('hidden');
+        document.getElementById("sideIconDisplay").classList.add('hidden');
     }
             // ooty section
 
@@ -718,17 +761,17 @@
 
      var slideArrayKuttikanam = new Array(
        { 
-        "image": "assets/images/Otty/64.jpg",
+        "image": "assets/images/Otty/WK2.jpg",
         "title": "SAMPLE TEXT",
         "desciption": "The site of 10 Acres, sits atop a hill with views of a valley and is adjoined to a picturesque creek. The setting is perfect for families and friends who want to unravel from their busy lives and take some time to treat their senses with the sound of flowing water from creek, the chirping of birds, and the breath of fresh air. For those who would like to be a little active, Winterlake offers a mini-golf. course and a horse stable and ",
         "subdescription": "The site of 10 Acres, sites a top a hill with viewsof the valley and is adjoined to a picturesquare creel. The setting is perfect for families and friends who want to unravel from their busy lives and take some time to treat their senses." 
       },
-      { "image": "assets/images/Otty/72.jpg",
+      { "image": "assets/images/Otty/01_02 SET_78 - Photo copy.jpg",
        "title": "SAMPLE TEXT",
         "desciption": "The site of 10 Acres, sits atop a hill with views of a valley and is adjoined to apicturesque creek. The setting is perfect for families and friends who want to unravelfrom their busy lives and take some time to treat their senses with the sound of flowing water from creek, the chirping of birds, and the breath of fresh air",
          "subdescription": "the account of being perjudice it was an extra ordinary level of entertainment which was an seculatories which we will find a more attendendive which is common for the process" 
       },
-      { "image": "assets/images/Otty/58.jpg",
+      { "image": "assets/images/Otty/01_02 SET_77 - Photo copy.jpg",
        "title": "SAMPLE TEXT",
         "desciption": "The site of 10 Acres, sits atop a hill with views of a valley and is adjoined to apicturesque creek. The setting is perfect for families and friends who want to unravelfrom their busy lives and take some time to treat their senses with the sound of flowing water from creek, the chirping of birds, and the breath of fresh air",
        "subdescription": "the account of being perjudice it was an extra ordinary level of entertainment which was an seculatories which we will find a more attendendive which is common for the process" 
@@ -793,9 +836,35 @@
 
 
     // ================adding onclick function to particular buttons=======================
+           // =========ooty button========//
 
+          document.getElementById("ootyButton").addEventListener("click", displayContent);
+          document.getElementById("ootyButton").addEventListener("click", ootyDisplayDirect);
+          
+            function ootyDisplayDirect(){
+             location.href = "#ootySection"
+           }
 
+          // ===========Kuttikanam button============/
 
+          document.getElementById("kuttikanamButton").addEventListener("click", displayContent);
+          document.getElementById("kuttikanamButton").addEventListener("click", kuttikanamDisplayDirect);
+
+           function kuttikanamDisplayDirect(){
+             location.href = "#Kuttikkanam"
+           }
+        //============Kodaikanal button===============/
+            document.getElementById("kodaiButton").addEventListener("click", displayContent);
+          document.getElementById("kodaiButton").addEventListener("click", kodaikanalDisplayDirect);
+
+           function kodaikanalDisplayDirect(){
+             location.href = "#kodaikanal"
+           }
+
+           function displayHideIcon(){
+            document.getElementById("sideIconDisplay").classList.add('hidden');
+           }
+           
     </script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>

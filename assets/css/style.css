@@ -91,6 +91,10 @@ ul button:focus {
 .pic1style {
   height: 56px;
 }
+.side_icon{
+  width: 9%;
+  position: fixed;
+}
 
 div.relative {
   position: relative;
