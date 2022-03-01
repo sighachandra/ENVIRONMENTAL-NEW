@@ -89,7 +89,7 @@ ul button:focus {
 }
 
 .pic1style {
-  height: 56px;
+  height: 100px;
 }
 .side_icon{
   width: 9%;
@@ -355,6 +355,52 @@ div.absolute {
   position: relative;
 }
 
+
+
+/*In mobile view as 3 buttons*/
+
+.ooty_mobile_btn{
+
+      width: 30%;
+    border: none;
+    color: white;
+    background-color: #7484a5;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+}
+.kuttikanam_mobile_btn{
+      width: 30%;
+    border: none;
+    color: white;
+    background-color: #7484a5;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.kodaikanal_mobile_btn{
+      width: 30%;
+    border: none;
+    color: white;
+    background-color: #7484a5;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+}
+.icon_hide{
+  display: none;
+}
+
+  /*end of this part*/
+
+.hhd{
+  display: none;
+  padding-top: 24px;
+}
+.pText310{
+      text-align: center;
+    font-size: larger;
+    font-weight: 100;
+}
 @media (max-width: 768px) {
   html {
     height: 100%;
@@ -610,5 +656,13 @@ div.absolute {
   .mobileHide{
     display: none;
   } 
-
+  .icon_hide{
+    display: block;
+    padding-top: 24px;
+  }
+  .pText310{
+    font-size: 12px;
+    margin-right: 14px;
+    margin-left: 14px;
+  }
 }
