@@ -368,7 +368,7 @@ div.absolute {
     flex: 1;
   }
   .ei-container {
-    flex: 1;
+   /* flex: 1;*/
     display: flex;
     flex-direction: column;
     padding-left: 0px;
@@ -377,7 +377,7 @@ div.absolute {
   #pills-tabContent {
     display: flex;
     flex: 1;
-    margin-top: 0px !important;
+   /* margin-top: 0px !important;*/
   }
 
   #company-overview.active {
@@ -606,6 +606,9 @@ div.absolute {
 
   #architecture {
     padding-top: 5vh;
-  }  
+  } 
+  .mobileHide{
+    display: none;
+  } 
 
 }

@@ -10,7 +10,8 @@
 <body onload="triggerRezise()">
     <div class="container ei-container">
 
-                  <!-- Logo and heading section -->
+                    <!-- Logo and heading section -->
+
         <div class="arrange">
             <div class="divlogo">
                 <img src="assets/images/logo.png" alt="" class="logo">
@@ -29,29 +30,30 @@
                 </ul>
             </div>
         </div>
+
                       <!-- End of the section -->
     </div> 
 
 
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5 mobileHide">
        
            
                 <div class="side_icon hidden" id="sideIconDisplay">
                     <div class="wl-items w-100">
                         <div class="w-100">
-                            <button class="kodaibutton w-100" id="ootyButtonSide"><img class="w-100" src="assets/images/winter-lake-ooty.png" /></button>
+                            <button class="kodaibutton w-100" id="ootyButtonSide1" onclick="ootyDisplayDirect()"><img class="w-100" src="assets/images/winter-lake-ooty.png" /></button>
                         </div>
                         
                     </div>
                     <div class="wl-items w-100">
                         <div class="w-100">
-                             <button class="kodaibutton w-100" id="kuttikanamButtonSide"><img class="w-100" src="assets/images/winterlake-kuttikkanam.jpeg" /> </a></b>
+                             <button class="kodaibutton w-100" id="kuttikanamButtonSide1" onclick="kuttikanamDisplayDirect()"><img class="w-100" src="assets/images/winterlake-kuttikkanam.jpeg" /> </a></b>
                         </div>
                        
                     </div>
                     <div class="wl-items w-100">
                         <div class="w-100" >
-                            <button class="kodaibutton w-100" id="kodaiButtonSide"> <img class="w-100" src="assets/images/winter-lake-kodaikanal.png" /> </button>
+                            <button class="kodaibutton w-100" id="kodaiButtonSide1" onclick="kodaikanalDisplayDirect()"> <img class="w-100" src="assets/images/winter-lake-kodaikanal.png" /> </button>
                         </div>
                         
                     </div>
@@ -67,7 +69,7 @@
     </div> 
 
 
-       <div class="container">               
+       <div class="container p-0">               
 
         <div class="tab-content mt-4" id="pills-tabContent">
                                  
@@ -147,90 +149,7 @@
               <!-- <div class="tab-pane fade" id="property-development" role="tabpanel" aria-labelledby="pills-profile-tab" >  -->
             <div id="dispalyonclick" class="hidden">
 
-                           <!-- Begining of the kodaikanal section -->
-               <div id="kodaikanal">
-                <div id="view-1" class="height-100vh-mob" >
-                    <div class="d-flex justify-content-center label1 py-2 ">
-                        <img src="assets/images/winter-lake-kodaikanal-12-.png" class="pic1style" alt="">
-                    </div>
-                    <div class="relative img-bg" id="relative-in">
-                        <img class="w-100p" src="assets/images/main_image.jpg" />
-                        <div class="absolute py-2 px-4">
-                            <p class="pText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                        </div>
-                    </div>
-                    <div class="sample">
-                        <p class="text-center h3"><span class="bold-head">SAMPLE TEXT</span> </p>
-                        <div class="mb-0">
-                            <p class="pText3">The site of 10 Acres, sits atop a hill with views of a valley and is adjoined to a
-                                picturesque creek. The setting is perfect for families and friends who want to
-                                unravel from their busy lives and take some time to treat their senses with the
-                                sound of flowing water from creek, the chirping of birds, and the breath of fresh
-                                air. For those who would like to be a little active, Winterlake offers a mini-golf
-                                course and a horse stable and track.</p>
-                        </div>
-                    </div>
-                </div>
-
-                
-                    <div id="view-2" class="height-100vh-mob" >
-                        <div  class="relative3 img-bg">
-                            <img id="displayFirstImage" class="w-100p" src="" />
-                            <div class="absolute py-2 px-4">
-                                <p class="pText" id="ptexts"></p>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" onclick="prevSlideClick()">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" onclick="slideNextClick()">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div class="caption">
-                            <p class="text-start h3"><span class="bold-head border-bottom-white"id="textSample"></span></p>
-                            <div class="mb-0">
-                                <p class="pText2" id="pText2d"></p>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-column bd-highlight mb-3">
-                            <div id="fullImages" class="fullImg">
-                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg1"></div>
-                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg2"></div>
-                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg3"></div>
-                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg4"></div>
-                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg5"></div>
-                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg6"></div>
-                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg7"></div>
-                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg8"></div>
-                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg9"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <img src="assets/images/web images1pg w (2).png" class="img-fluid" id="mapstyle" alt="">
-                    </div>
-                    <div class="caption">
-                        <h2>LOCATION MAP</h2>
-                    </div>
-                
-                <div>
-                    <img src="assets/images/web images1pg w (1).png" class="img-fluid" alt="">
-                </div>
-                <div class="caption">
-                    <h2>LAYOUT MAP</h2>
-                </div>
-                <div class="relativeI">
-                    <div class="absoluteI">
-                        <p style="font-family: 'Montserrat';">Sample text, site a top of a hill with views of a valley and is adjoined to a picturesquare creek. The setting isperfect for the famiies and friends who want to unravel from their busy lives...</p>
-                    </div>
-                </div>
-            </div>
-                             
-                             <!-- end of the kodaikanal section -->
-
+                           
                              <!-- Begining of the ooty section -->
 
                 <div id="ootySection">
@@ -377,6 +296,90 @@
         
 
                               <!-- end of the kuttikanam section -->
+
+                            <!-- Begining of the kodaikanal section -->
+               <div id="kodaikanal">
+                <div id="view-1" class="height-100vh-mob" >
+                    <div class="d-flex justify-content-center label1 py-2 ">
+                        <img src="assets/images/winter-lake-kodaikanal-12-.png" class="pic1style" alt="">
+                    </div>
+                    <div class="relative img-bg" id="relative-in">
+                        <img class="w-100p" src="assets/images/main_image.jpg" />
+                        <div class="absolute py-2 px-4">
+                            <p class="pText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                    </div>
+                    <div class="sample">
+                        <p class="text-center h3"><span class="bold-head">SAMPLE TEXT</span> </p>
+                        <div class="mb-0">
+                            <p class="pText3">The site of 10 Acres, sits atop a hill with views of a valley and is adjoined to a
+                                picturesque creek. The setting is perfect for families and friends who want to
+                                unravel from their busy lives and take some time to treat their senses with the
+                                sound of flowing water from creek, the chirping of birds, and the breath of fresh
+                                air. For those who would like to be a little active, Winterlake offers a mini-golf
+                                course and a horse stable and track.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                    <div id="view-2" class="height-100vh-mob" >
+                        <div  class="relative3 img-bg">
+                            <img id="displayFirstImage" class="w-100p" src="" />
+                            <div class="absolute py-2 px-4">
+                                <p class="pText" id="ptexts"></p>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" onclick="prevSlideClick()">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" onclick="slideNextClick()">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="caption">
+                            <p class="text-start h3"><span class="bold-head border-bottom-white"id="textSample"></span></p>
+                            <div class="mb-0">
+                                <p class="pText2" id="pText2d"></p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column bd-highlight mb-3">
+                            <div id="fullImages" class="fullImg">
+                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg1"></div>
+                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg2"></div>
+                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg3"></div>
+                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg4"></div>
+                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg5"></div>
+                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg6"></div>
+                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg7"></div>
+                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg8"></div>
+                                <div class="img-thumbnail thumbnailImage img-bg" id="wimg9"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="assets/images/web images1pg w (2).png" class="img-fluid" id="mapstyle" alt="">
+                    </div>
+                    <div class="caption">
+                        <h2>LOCATION MAP</h2>
+                    </div>
+                
+                <div>
+                    <img src="assets/images/web images1pg w (1).png" class="img-fluid" alt="">
+                </div>
+                <div class="caption">
+                    <h2>LAYOUT MAP</h2>
+                </div>
+                <div class="relativeI">
+                    <div class="absoluteI">
+                        <p style="font-family: 'Montserrat';">Sample text, site a top of a hill with views of a valley and is adjoined to a picturesquare creek. The setting isperfect for the famiies and friends who want to unravel from their busy lives...</p>
+                    </div>
+                </div>
+            </div>
+                             
+                             <!-- end of the kodaikanal section -->
 
                 <div class="d-flex justify-content-center my-4">
                     <img src="assets/images/logo.png" alt="" class="logo1">
@@ -758,6 +761,34 @@
         recheckThumnailsOrientationOtty();
     }
      // kuttikanam section
+         const recheckThumnailsOrientationKuttikanam = function() {
+        if(!isDesktop){
+
+            const thumbnailImageElementsKuttikanam = document.getElementsByClassName('thumbnailImageK');
+            
+            let activeElementIndexKuttikanam = null;
+            for (let indexK = 0; indexK < thumbnailImageElementsKuttikanam.length; indexK++) {
+                const currentElementK = thumbnailImageElementsKuttikanam[indexK];
+                currentElementK.style.display = 'none';
+                if(currentElementK.className.split(' ').indexOf('active') !== -1){
+                    activeElementIndexKuttikanam = indexK;
+                }
+            }
+
+            if(thumbnailImageElementsKuttikanam[activeElementIndexKuttikanam-1]){
+                thumbnailImageElementsKuttikanam[activeElementIndexKuttikanam-1].style.display = 'inline-block';
+            }
+
+            thumbnailImageElementsKuttikanam[activeElementIndexKuttikanam].style.display = 'inline-block';
+
+
+            if(thumbnailImageElementsKuttikanam[activeElementIndexKuttikanam+1]){
+                thumbnailImageElementsKuttikanam[activeElementIndexKuttikanam+1].style.display = 'inline-block';
+            }
+            
+
+        }
+    }
 
      var slideArrayKuttikanam = new Array(
        { 
@@ -831,7 +862,7 @@
         document.getElementById("textSampleKuttikanam").innerText = slideArrayKuttikanam[targetIndexKuttikanam].title;
 
         slideIndexKuttikanam = targetIndexKuttikanam;
-        // recheckThumnailsOrientationOtty();
+       recheckThumnailsOrientationKuttikanam();
     }
 
 
