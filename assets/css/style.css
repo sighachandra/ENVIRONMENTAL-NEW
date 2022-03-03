@@ -401,11 +401,21 @@ div.absolute {
     font-size: larger;
     font-weight: 100;
 }
+.a-location{
+  color: black;
+  text-decoration: none;
+}
+.a-location:hover{
+  color: black;
+}
 .a_dwld{
   color:  #7484a5;
 }
 .a_dwld:hover{
   color: #7484a5;
+}
+.pplast{
+  padding-top: 12px;
 }
 @media (max-width: 768px) {
   html {
@@ -671,4 +681,7 @@ div.absolute {
     margin-right: 14px;
     margin-left: 14px;
   }
+  .pplast{
+  padding-top: 0px;
+}
 }
