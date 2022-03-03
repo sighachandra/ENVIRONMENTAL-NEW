@@ -401,6 +401,12 @@ div.absolute {
     font-size: larger;
     font-weight: 100;
 }
+.a_dwld{
+  color:  #7484a5;
+}
+.a_dwld:hover{
+  color: #7484a5;
+}
 @media (max-width: 768px) {
   html {
     height: 100%;
