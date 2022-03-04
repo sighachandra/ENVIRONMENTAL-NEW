@@ -455,8 +455,8 @@ div.absolute {
     flex-direction: column;
     justify-content: center;
     font-size: 16px;
-    margin-left: 24px !important;
-    margin-right: 24px !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
     padding-top: 5vh;
   }
   .divlogo {
