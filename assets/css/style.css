@@ -417,6 +417,10 @@ div.absolute {
 .pplast{
   padding-top: 12px;
 }
+.total_arrar{
+  margin-right: 16px;
+  margin-left: 16px;
+}
 @media (max-width: 768px) {
   html {
     height: 100%;
@@ -428,6 +432,10 @@ div.absolute {
     display: flex;
     flex-direction: column;
     flex: 1;
+  }
+  .total_arrar{
+    margin-right: 0px;
+    margin-left: 0px;
   }
   .ei-container {
    /* flex: 1;*/
