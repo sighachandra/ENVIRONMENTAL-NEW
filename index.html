@@ -35,7 +35,7 @@
 
                       <!-- End of the section -->
     </div> 
-    <div class="container-fluid hhd" id="hhhd">
+    <div class="container-fluid hhd" id="hhhd" style="display:none">
         <div class="text-center w-100 icon_hide">
             <button class="ooty_mobile_btn" id="ootyIconDirect">Ooty</button>
             <button class="kuttikanam_mobile_btn" id="kuttikanamIconDirect">Kuttikanam</button>
@@ -49,7 +49,7 @@
               
        
            
-                <div class="side_icon hidden mobileHide" id="sideIconDisplay">
+                <div class="side_icon hidden mobileHide" id="sideIconDisplay" style="display: none">
                      
                 
                   <div class="w-100">
@@ -138,7 +138,7 @@
             
 
               <!-- <div class="tab-pane fade" id="property-development" role="tabpanel" aria-labelledby="pills-profile-tab" >  -->
-            <div id="dispalyonclick" class="hidden">
+            <div id="dispalyonclick" class=" ppd-spa">
 
                            
                              <!-- Begining of the ooty section -->
@@ -155,7 +155,7 @@
                         </div>
                     </div>
                     <div class="sample">
-                        <p class="text-center h3"><span class="bold-head">SAMPLE TEXT</span> </p>
+                        <!-- <p class="text-center h3"><span class="bold-head">SAMPLE TEXT</span> </p> -->
                         <div class="mb-0">
                             <p class="pText3">The most popular development project by ei Holdings include Winterlake, Ooty, a 45 acre private gated community comprised of various designer homes, one of them was featured in the Architectural Digest.</p>
                         </div>
@@ -214,15 +214,15 @@
                     </div>
                     <div class="relative img-bg" id="relative-in">
                         <img class="w-100p" src="assets/images/kuttikkanam/kuttikkanam-main-image.png" />
-                        <div class="absolute py-2 px-4">
+                        <!-- <div class="absolute py-2 px-4">
                             <p class="pText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="sample">
-                        <p class="text-center h3"><span class="bold-head">SAMPLE TEXT</span> </p>
+                       <!--  <p class="text-center h3"><span class="bold-head">SAMPLE TEXT</span> </p>
                         <div class="mb-0">
                             <p class="pText3">The most popular development project by ei Holdings include Winterlake, Ooty, a 45 acre private gated community comprised of various designer homes, one of them was featured in the Architectural Digest.</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div id="view-2" class="height-100vh-mob" >
@@ -241,7 +241,7 @@
                             </button>
                         </div>
                         <div class="caption">
-                            <p class="text-start h3"><span class="bold-head border-bottom-white"id="textSampleKuttikanam"></span></p>
+                            <!-- <p class="text-start h3"><span class="bold-head border-bottom-white"id="textSampleKuttikanam"></span></p> -->
                             <div class="mb-0">
                                 <p class="pText2" id="pText2dKuttikanam"></p>
                             </div>
@@ -644,8 +644,8 @@
         }
     }
     function displayContent(){
-        document.getElementById("dispalyonclick").classList.remove("hidden");
-        document.getElementById("displayHidden").classList.add("hidden");
+        // document.getElementById("dispalyonclick").classList.remove("hidden");
+        // document.getElementById("displayHidden").classList.add("hidden");
         document.getElementById("sideIconDisplay").classList.remove("hidden");
         
 
@@ -817,9 +817,9 @@
 
 
         document.getElementById("displayFirstImageooty").setAttribute("src", slideArrayooty[targetIndexooty].image);
-        document.getElementById("ptextsooty").innerText = slideArrayooty[targetIndexooty].subdescription;
+        // document.getElementById("ptextsooty").innerText = slideArrayooty[targetIndexooty].subdescription;
         document.getElementById("pText2dooty").innerText = slideArrayooty[targetIndexooty].desciption;
-        document.getElementById("textSampleooty").innerText = slideArrayooty[targetIndexooty].title;
+        // document.getElementById("textSampleooty").innerText = slideArrayooty[targetIndexooty].title;
 
         slideIndexooty = targetIndexooty;
         recheckThumnailsOrientationooty();
@@ -898,9 +898,9 @@
 
 
         document.getElementById("displayFirstImageKuttikanam").setAttribute("src", slideArrayKuttikanam[targetIndexKuttikanam].image);
-        document.getElementById("ptextsKuttikanam").innerText = slideArrayKuttikanam[targetIndexKuttikanam].subdescription;
+        // document.getElementById("ptextsKuttikanam").innerText = slideArrayKuttikanam[targetIndexKuttikanam].subdescription;
         document.getElementById("pText2dKuttikanam").innerText = slideArrayKuttikanam[targetIndexKuttikanam].desciption;
-        document.getElementById("textSampleKuttikanam").innerText = slideArrayKuttikanam[targetIndexKuttikanam].title;
+        // document.getElementById("textSampleKuttikanam").innerText = slideArrayKuttikanam[targetIndexKuttikanam].title;
 
         slideIndexKuttikanam = targetIndexKuttikanam;
        recheckThumnailsOrientationKuttikanam();
@@ -951,7 +951,7 @@
             document.getElementById("pills-contact-tab").addEventListener("click", displayHideIcon);
             document.getElementById("pills-home-tab").addEventListener("click",  displayMobileIcon);
             document.getElementById("pills-contact-tab").addEventListener("click",  displayMobileIcon);
-            document.getElementById("pills-home-tab").addEventListener("click",  togglingContentMainmenu);
+            window.addEventListener("load",  displayContent);
            
     </script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

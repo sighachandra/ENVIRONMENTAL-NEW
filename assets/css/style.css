@@ -160,6 +160,7 @@ div.absolute {
   font-weight: 100;
   padding-top: 5px;
   padding-bottom: 11px;
+  margin-bottom: 6px;
 }
 
 .ptop {
@@ -267,6 +268,9 @@ div.absolute {
   text-align: center;
   background-color: #7489a5;
   color: white;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 9px;
 }
 .inner-div {
   width: 35%;
@@ -421,7 +425,14 @@ div.absolute {
   margin-right: 16px;
   margin-left: 16px;
 }
+.ppd-spa{
+  margin-top: 25px;
+}
+
 @media (max-width: 768px) {
+  .ppd-spa{
+    margin-top: 135px;
+  }
   html {
     height: 100%;
     display: flex;
@@ -586,15 +597,16 @@ div.absolute {
     content: none;
   }
 
-  #property-development.tab-pane.fade.active {
+  /*#property-development.tab-pane.fade.active {
     display: flex;
-  }
+  }*/
 
   #property-development.tab-pane.fade.active #displayHidden {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+
   }
 
   .height-100vh-mob {
@@ -639,7 +651,7 @@ div.absolute {
   }
 
   #view-2 .caption {
-    padding: 22px;
+    padding: 15px;
   }
 
   #view-2 #pText2d {
