@@ -18,6 +18,10 @@ body {
   font-family: "Roboto-Medium";
   src: url("../fonts/Roboto-Medium.ttf");
 }
+@font-face {
+  font-family: "Roboto-Black.ttf";
+  src: url("../fonts/Roboto-Black.ttf");
+}
 
 
 
@@ -271,6 +275,19 @@ div.absolute {
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 9px;
+  
+}
+.caption-H {
+  text-align: center;
+  background-color: #7489a5;
+  color: white;
+  padding-top: 8px;
+    padding-bottom: 4px;
+  font-family: "Roboto-Black.ttf";
+  
+}
+.caption-H h2{
+  margin-bottom: 0;
 }
 .inner-div {
   width: 35%;
@@ -613,7 +630,7 @@ div.absolute {
     /*height: 95vh;*/
     display: flex;
     flex-direction: column;
-    margin-top: 5vh;
+    margin-top: 11vh;
   }
 
   #view-2.height-100vh-mob .absolute, #view-1.height-100vh-mob .absolute {
