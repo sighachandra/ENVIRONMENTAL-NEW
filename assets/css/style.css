@@ -284,7 +284,7 @@ div.absolute {
   padding-top: 8px;
     padding-bottom: 8px;
   font-family: "Roboto-Black.ttf";
-  margin: 20px;
+  
   
 }
 .caption-H h2{
@@ -627,14 +627,14 @@ div.absolute {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-
+    margin-top: 14vh;
   }
 
   .height-100vh-mob {
     /*height: 95vh;*/
     display: flex;
     flex-direction: column;
-    margin-top: 11vh;
+    margin-top: 20vh;
   }
 
   #view-2.height-100vh-mob .absolute, #view-1.height-100vh-mob .absolute {
@@ -724,5 +724,8 @@ div.absolute {
   }
   .pplast{
   padding-top: 0px;
+}
+.caption-H{
+  margin: 20px;
 }
 }
