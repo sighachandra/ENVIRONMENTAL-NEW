@@ -444,10 +444,16 @@ div.absolute {
   margin-left: 16px;
 }
 .ppd-spa{
-  margin-top: 25px;
+  margin-top: 135px;
+}
+#displayHidden{
+  margin-top: 135px;
 }
 
 @media (max-width: 768px) {
+  .relativeIK{
+    height: 285px;
+  }
   .ppd-spa{
     margin-top: 49px;
   }
